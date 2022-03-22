@@ -34,13 +34,13 @@ Nmap Scans needed:
 
 - UDP Scanning: nmap -sU -sV -T4 network/CIDR
 
- <hr />
+<hr />
 Banner grabbing (HTTP):
 
 - nc -v <machine IP> PORT
 - HEAD / HTTP/1.0
 
- <hr />
+<hr />
 Banner grabbing (HTTPS):
 
 - openssl s_client -connect <machine IP>:PORT
@@ -51,7 +51,7 @@ Banner grabbing (HTTPS):
 
 - no information related to certificate, state or other information but communication with server, openssl s_client -connect hack.me:443 -quiet
 
- <hr />
+<hr />
   
 SQLMAP:
 
@@ -72,7 +72,7 @@ John:
 - unshadow passwd shadow > hashpass
 - john --wordlist=/path/to/wordlist.txt -users=user.txt hashpass
   
-  <hr />
+<hr />
 
 HYDRA:
 
@@ -84,12 +84,12 @@ HYDRA:
 
 - Post Webforms: hydra -l <username> -P <wordlist> 10.10.181.249 http-post-form "/:username=^USER^&password=^PASS^:F=incorrect" -V
 
-   <hr />
+<hr />
 Subdomain Enum:
 
 - To enumerate subdomains, sublist3r -d site.com
 
-   <hr />
+<hr />
 
 Windows Shares using Null Sessions:
 
@@ -103,7 +103,7 @@ Windows Shares using Null Sessions:
 
 - To gather info, enum4linux -a <machine IP>
 
-   <hr />
+<hr />
   
 ARP Spoofing:
 
@@ -111,7 +111,7 @@ ARP Spoofing:
 
 - Run arpspoof, arpspoof -i [interface] -t <target machine IP> -r <host machine IP>
 
-   <hr />
+<hr />
   
 Metasploit:
 
@@ -128,7 +128,7 @@ after starting of MSF, these are the basic commands,
 - options, show advanced options
 - SET X (e.g. set RHOST 10.10.10.10, set payload x)
 
-   <hr />
+<hr />
   
 Meterpreter Commands:
 
@@ -150,28 +150,28 @@ Check active route table, route
 
 port forwarding, portfwd add -L <attacker machine IP> -l listening_port -p 80 -r <host machine IP>
 
- <hr />
+<hr />
   
 Spawning a TTY shell:
 
 - python -c 'import pty;pty.spawn("/bin/bash");'
 
- <hr />
+<hr />
 Start python based file server on our own instance:
 
 - python3 -m http.server 80
 
- <hr />
+<hr />
 
 Gobuster:
 
 - gobuster dir -u http://<ip>/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 15
 
- <hr />
+<hr />
 Find:
 
 - find / -iname * (keyword) * 2>/dev/null
- <hr />
+<hr />
 
 PIVOTING: (from meterpreter)
 
@@ -201,7 +201,7 @@ PIVOTING: (from meterpreter)
 
 - nmap -sV -A -p1234 127.0.0.1
 
- <hr />
+<hr />
 
 Windows Command Line:
 
@@ -224,7 +224,7 @@ net users
 List drives on the machine:
 wmic logicaldisk get Caption,Description,providername
 
- <hr />
+<hr />
   
 **All the Best for your Exam :)**
 
