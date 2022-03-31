@@ -6,7 +6,7 @@ Resources and methodology required to pass eJPT certification. (eLearnSecurity J
 - Primary Resource: https://my.ine.com/CyberSecurity/learning-paths/a223968e-3a74-45ed-884d-2d16760b8bbd/penetration-testing-student
 
 
-- **Cheat Sheet** : https://github.com/nikkychowdary/eJPT/blob/main/cheatsheet.md
+- **Cheat Sheet** : https://github.com/nikkychowdary/eJPT/blob/main/ReadMe.md
 
 TryHackMe rooms:
 
